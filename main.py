@@ -1,16 +1,23 @@
-# This is a sample Python script.
+import sys
+import platform
+from PyQt5.QtWidgets import QApplication
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+"""
+Mac / Windows 각각 OS에 맞는 모듈을 실행합니다.
+"""
+def main():
+    app = QApplication(sys.argv)
+    system = platform.system()
 
+    if system == 'Darwin':
+        from mac.process_monitor import ProcessMonitorApp
+    elif system == 'Windows':
+        from windows.process_monitor import ProcessMonitorApp
+    else:
+        raise NotImplementedError(f"Unsupported operating system: {system}")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+    ex = ProcessMonitorApp()
+    sys.exit(app.exec_())
 
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
