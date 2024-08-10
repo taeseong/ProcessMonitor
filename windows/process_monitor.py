@@ -21,7 +21,7 @@ class ProcessMonitorApp(QWidget):
         self.update_thread.start()
 
     def initUI(self):
-        self.setWindowTitle('Active Window Title')
+        self.setWindowTitle('Process Monitor')
 
         self.layout = QVBoxLayout()
         self.title_label = QLabel('Active Window Title: ', self)
