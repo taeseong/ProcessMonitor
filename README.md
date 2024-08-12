@@ -13,7 +13,9 @@
 
 ### Python Packages on Mac
 ```
-
+- PyQt5
+- pyobjc
+- psutil
 ```
 
 
