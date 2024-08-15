@@ -16,7 +16,10 @@ def main():
     else:
         raise NotImplementedError(f"Unsupported operating system: {system}")
 
-    ex = ProcessMonitorApp()
+    # ProcessMonitorApp을 QApplication 인스턴스와 함께 생성
+    ex = ProcessMonitorApp(app)
+    ex.show()
+
     sys.exit(app.exec_())
 
 if __name__ == '__main__':
