@@ -11,6 +11,7 @@
 ```
 
 
+
 ### Python Packages on Mac
 ```
 - PyQt5
@@ -20,9 +21,10 @@
 
 
 ### Screenshot
+![스크린샷 2024-08-15 오후 8 02 25](https://github.com/user-attachments/assets/80a4c330-50ef-4ad5-9038-3ca76788ecfd)
+
+
 ![image](https://github.com/user-attachments/assets/18307384-c9c7-4c2d-aced-36ca2570502b)
-
-
 
 
 ### License
